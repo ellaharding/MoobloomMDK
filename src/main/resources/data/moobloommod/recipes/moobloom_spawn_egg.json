@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "FDF",
+    "LBL"
+  ],
+  "key": {
+    "F": {
+      "tag": "minecraft:flowers"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "B": {
+      "item": "minecraft:beef"
+    }
+  },
+  "result": {
+    "item": "moobloommod:moobloom_spawn_egg"
+  }
+}

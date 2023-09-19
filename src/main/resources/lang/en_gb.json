@@ -1,3 +1,5 @@
 {
-  "entity.mooshroommod.moobloom_entity": "Moobloom Entity"
+  "entity.mooshroommod.moobloom": "Moobloom",
+  "item.moobloommod.moobloom_spawn_egg": "Moobloom Spawn Egg"
+
 }

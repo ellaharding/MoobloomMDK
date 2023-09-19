@@ -1,6 +1,7 @@
 package com.gmail.ellaharding.Moobloom;
 
 import com.gmail.ellaharding.Moobloom.init.EntityInit;
+import com.gmail.ellaharding.Moobloom.init.ItemInit;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -15,5 +16,6 @@ public class MoobloomMod {
 
         //Add item and create tab inits here as well with same formatting
         EntityInit.ENTITIES.register(bus);
+        ItemInit.ITEMS.register(bus);
     }
 }

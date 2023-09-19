@@ -43,7 +43,11 @@ public class MoobloomEntity extends MushroomCow {
         //research brains for more complex AI
     }
 
-    public static boolean canSpawn(EntityType<MoobloomEntity> entityType, LevelAccessor level, MobSpawnType spawnType, BlockPos position, RandomSource random) {
+    public static boolean canSpawn(EntityType<MoobloomEntity> entityType,
+                                   LevelAccessor level,
+                                   MobSpawnType spawnType,
+                                   BlockPos position,
+                                   RandomSource random) {
         return Cow.checkAnimalSpawnRules(entityType, level, spawnType, position, random);
     }
 

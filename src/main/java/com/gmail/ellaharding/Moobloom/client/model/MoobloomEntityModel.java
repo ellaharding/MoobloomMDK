@@ -17,7 +17,7 @@ public class MoobloomEntityModel<T extends MoobloomEntity> extends QuadrupedMode
 		super(p_170515_, false, 10.0F, 4.0F, 2.0F, 2.0F, 24);
 	}
 
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(MoobloomMod.MOD_ID, "moobloom_entity"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(MoobloomMod.MOD_ID, "moobloom"), "main");
 	public static LayerDefinition createBodyLayer( ) {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
