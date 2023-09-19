@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "biomes": "#minecraft:is_overworld",
+  "spawners": {
+    "type": "moobloommod:moobloom_entity",
+    "weight": 150,
+    "minCount": 2,
+    "maxCount": 8
+  }
+}
