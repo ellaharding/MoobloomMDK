@@ -3,9 +3,7 @@ package com.gmail.ellaharding.Moobloom.entities;
 import com.gmail.ellaharding.Moobloom.init.EntityInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.ai.goal.*;
@@ -27,10 +25,10 @@ public class MoobloomEntity extends MushroomCow {
         setPos(x,y,z);
     }
 
-    @Override
-    public MushroomCow getBreedOffspring(ServerLevel level, AgeableMob otherParent) {
-        return new MoobloomEntity(level, position().x, position().y, position().z);
+    public MoobloomEntity(Level level, BlockPos position) {
+        this(level, position.getX(), position.getY(),position.getZ());
     }
+
 
     @Override
     protected void registerGoals() {
