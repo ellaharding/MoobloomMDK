@@ -58,7 +58,13 @@ public class MoobloomEntity extends MushroomCow {
                                    MobSpawnType spawnType,
                                    BlockPos position,
                                    RandomSource random) {
-        return Cow.checkAnimalSpawnRules(entityType, level, spawnType, position, random) && (level.getBiome(position) == Biomes.FLOWER_FOREST);
+        return checkAnimalSpawnRules(entityType, level, spawnType, position, random);
+                //&& (level.getBiome(position) == Biomes.FLOWER_FOREST);
+
+        /*
+
+kill @e[type=moobloommod:moobloom]
+         */
     }
 
 

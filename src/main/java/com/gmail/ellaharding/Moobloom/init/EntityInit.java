@@ -12,10 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class EntityInit {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MoobloomMod.MOD_ID);
 
-    public static final RegistryObject<EntityType<MoobloomEntity>> MOOBLOOM_ENTITY = ENTITIES.register("moobloom",
+    public static final RegistryObject<EntityType<MoobloomEntity>> MOOBLOOM_ENTITY = ENTITIES.register("moobloom_entity",
             () -> EntityType.Builder.<MoobloomEntity>of(MoobloomEntity::new, MobCategory.CREATURE)
-                    .build(new ResourceLocation(MoobloomMod.MOD_ID,"moobloom").toString()));
+                    .build(new ResourceLocation(MoobloomMod.MOD_ID,"moobloom_entity").toString()));
 }
-
-
-//23.2
