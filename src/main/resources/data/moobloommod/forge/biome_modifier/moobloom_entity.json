@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "minecraft:flower_forest",
+  "spawners": {
+    "type": "moobloommod:moobloom_entity",
+    "weight": 75,
+    "minCount": 2,
+    "maxCount": 8
+  }
+}
