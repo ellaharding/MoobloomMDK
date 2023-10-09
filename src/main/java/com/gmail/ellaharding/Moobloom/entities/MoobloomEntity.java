@@ -73,7 +73,6 @@ public class MoobloomEntity extends MushroomCow {
 
     @Override
     public List<ItemStack> onSheared(@Nullable Player player, @NotNull ItemStack item, Level world, BlockPos pos, int fortune) {
-        if
         return super.onSheared(player, item, world, pos, fortune);
     }
 
