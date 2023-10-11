@@ -18,4 +18,6 @@ public class MoobloomEntityRenderer extends MobRenderer<MoobloomEntity,MoobloomE
     public ResourceLocation getTextureLocation(MoobloomEntity entity) {
         return TEXTURE;
     }
+
+
 }

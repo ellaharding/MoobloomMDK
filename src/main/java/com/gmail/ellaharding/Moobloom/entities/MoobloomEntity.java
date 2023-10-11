@@ -2,7 +2,6 @@ package com.gmail.ellaharding.Moobloom.entities;
 
 import com.gmail.ellaharding.Moobloom.init.EntityInit;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Holder;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
@@ -10,7 +9,6 @@ import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.ai.goal.*;
-import net.minecraft.world.entity.animal.Cow;
 import net.minecraft.world.entity.animal.MushroomCow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -18,7 +16,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.biome.Biomes;
 
 public class MoobloomEntity extends MushroomCow {
 
@@ -59,15 +56,5 @@ public class MoobloomEntity extends MushroomCow {
                                    BlockPos position,
                                    RandomSource random) {
         return checkAnimalSpawnRules(entityType, level, spawnType, position, random);
-                //&& (level.getBiome(position) == Biomes.FLOWER_FOREST);
-
-        /*
-
-kill @e[type=moobloommod:moobloom]
-         */
     }
-
-
-
-
 }
