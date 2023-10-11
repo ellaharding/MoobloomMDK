@@ -11,4 +11,4 @@ Features-
         FFF
         FDF
         LBL
-    - Mooblooms can be bred together through using daffodils
+    - Mooblooms can be bred together through using daffodils, and will follow the player when the have a daffodil in their hand.
