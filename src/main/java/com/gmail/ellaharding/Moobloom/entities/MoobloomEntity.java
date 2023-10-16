@@ -27,12 +27,14 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.gameevent.GameEvent;
 import org.apache.commons.lang3.tuple.Pair;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Handler;
@@ -72,11 +74,9 @@ public class MoobloomEntity extends MushroomCow {
 
     @Override
     public List<ItemStack> onSheared(@Nullable Player player, @NotNull ItemStack item, Level world, BlockPos pos, int fortune) {
-        return super.onSheared(player, item, world, pos, fortune);
+        return Collections.singletonList(new ItemStack(Blocks.DANDELION));
     }
-
-
-
+    
     public static boolean canSpawn(EntityType<MoobloomEntity> entityType,
                                    LevelAccessor level,
                                    MobSpawnType spawnType,
