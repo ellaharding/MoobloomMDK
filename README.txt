@@ -13,3 +13,5 @@ Features-
         LBL
     - Mooblooms can be bred together through using daffodils,
       and will follow the player when the have a daffodil in their hand.
+    - Mooblooms have a custom shearing function that gives the player the flower
+      that corresponds to the Moobloom.
